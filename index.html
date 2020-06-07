@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Todo-app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        todo list
+      </div>
+      <div class="content">
+        <div class="dateAndClear">
+          <div id="date">
+            Date:
+          </div>
+          <div class="clear">
+            <i class="fa fa-refresh" onclick="UI.clearList()"></i>
+          </div>
+        </div>
+        <ul id="list"></ul>
+      </div>
+      <div class="addTodo">
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+        <input type="text" id="input" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
